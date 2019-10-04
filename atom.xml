@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mulsign.github.io</id>
     <title>Multiply Bombe</title>
-    <updated>2019-10-01T06:28:11.218Z</updated>
+    <updated>2019-10-04T06:06:10.664Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mulsign.github.io"/>
     <link rel="self" href="https://mulsign.github.io/atom.xml"/>
@@ -41,7 +41,7 @@ github <a href="https://github.com/aflgo/aflgo">AFLGO</a></p>
 <strong>定向灰盒模糊是有效的有向模糊，有效地补充了基于符号执行的定向模糊。</strong></p>
 <p>AFLGo is an useful patch testing tool that effectively exposes vulnerabilities that were recently introduced and incomplete fixes of previously reported vulnerabilities.<br>
 <strong>AFLGo是一个有用的补丁测试工具，它可以有效地暴露最近引入的漏洞和以前报告的漏洞的未完成修复。</strong></p>
-<h3 id="主要贡献">主要贡献</h3>
+<h2 id="主要贡献">主要贡献</h2>
 <ol>
 <li>灰盒模糊与模拟退火的集成</li>
 <li>一种形式化的度量距离的方法是过程间的，同时考虑多个目标，可以在检测时有效地预先计算，并在运行时有效地导出</li>
@@ -49,6 +49,20 @@ github <a href="https://github.com/aflgo/aflgo">AFLGO</a></p>
 <li>AFLGo整合补丁测试工具为OSS-fuzz的完全自动化的工具链，可公开获得的<a href="https://github.com/aflgo/oss-fuzz">oss-fuzz</a></li>
 <li>大规模评估定向灰盒模糊作为补丁测试和崩溃再现工具的有效性和实用性</li>
 </ol>
+<h1 id="目录">目录</h1>
+<ol start="2">
+<li>以“心脏出血”为例，说明了定向灰盒模糊的相关特征；</li>
+<li>讨论了距离的形式化度量和灰盒模糊与模拟退火的集成；</li>
+<li>给出了具体的实现和实验设计；</li>
+<li>我们将AFLGo应用于补丁测试，并将其与最先进的技术KATCH进行比较;</li>
+<li>我们讨论将AFLGo集成到oss-fuzz中，并将其用于最近的更改;</li>
+<li>我们将AFLGo应用于崩溃复现，并将其与baseline无定向灰盒模糊(AFL)和最先进的(BugRedux[18])进行比较；</li>
+<li>引出对有效性的威胁；</li>
+<li>相关研究；</li>
+<li>结论。</li>
+</ol>
+<h1 id="引例">引例</h1>
+<p>我们以心脏出血漏洞为例，讨论了两种不同的定向模糊方法。传统上，直接模糊是基于符号执行的。在这里，我们将基于符号执行引擎Klee的补丁测试工具Katch与我们在本文中介绍的定向灰盒模糊实现AFLGo进行了比较。</p>
 ]]></content>
     </entry>
     <entry>
